@@ -1,0 +1,77 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+  background-image: url(img-form/imagem-fundo-form2.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  z-index: 1;
+  pointer-events: none;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Adicione esta linha para garantir que o main ocupe a largura total */
+  min-height: calc(100vh - 60px); /* Subtrai a altura aproximada do cabeçalho */
+}
+
+form {
+  width: 400px;
+  padding: 20px;
+  background-color: rgba(153, 149, 149, 0.143);
+  filter: drop-shadow(5px 5px 5px #000000);
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  color: white;
+  border: 1px solid rgba(151, 146, 146, 0.777);
+  pointer-events: all;
+  margin-top: 16em;
+}
+
+/* Restante do CSS... */
+
+h2 {
+  text-align: center;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+input, textarea {
+  width: calc(100% - 16px);
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+}
+button:hover {
+  background-color: #45a049;
+}
+.error-message {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
