@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --color-texto-cards:#f0f8ff;
+    --color-claro: #B9CE78;
+    --color-verde-medio: #9FB167;
+    --color-verde-semiescuro: #859456;
+    --color-verde-escuro: #6D7946;
+    --color-textos: #3d3d3d;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #000000;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #d8d7d7;
+    --color-ver-01: #E2E7D4;
+    --color-ver-02: #ADB48E;
+    --color-ver-03: #B4BA94;
+    --color-ver-04: #5B6234;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    background-color: var(--color-neutral-40);
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-content: center;
+}
+
+.container {
+    position: relative;
+    width: 850px;
+    height: 500px;
+    background-color: #ffffff;
+    box-shadow: 25px 30px 55px rgba(50, 50, 50, 0.467);
+    border-radius: 13px;
+    overflow: hidden;
+}
+
+.form-container {
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    padding: 0px 40px;
+    transition: all 0.6s ease-in-out;
+}
+
+.sign-up-container {
+    opacity: 0;
+    z-index: 1;
+}
+
+.sign-in-container {
+    z-index: 2;
+}
+
+form {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 50px;
+}
+
+h1 {
+    color: var(--color-neutral-0);
+}
+
+.social-container {
+    margin: 20px 0px;
+}
+
+.social-container a {
+    border: 2.3px solid var(--color-neutral-10);
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 5px;
+    height: 40px;
+    width: 40px;
+}
+
+span {
+    font-size: 12px;
+}
+
+.infield {
+    position: relative;
+    margin: 8px 0px;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    padding: 12px 8px;
+    background-color: var(--color-neutral-40);
+    border: none;
+    outline: none;
+}
+
+label {
+    position: relative;
+    left: 50%;
+    top: 100%;
+    transform: translateX(-50%);
+    width: 0%;
+    height: 2px;
+    background-color: var();
+    transition: 0.3s;
+}
+
+input:focus~label {
+    width: 100%;
+}
+
+a {
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0px;
+}
+
+a.forgot {
+    padding-bottom: 3px;
+    border-bottom: 2px solid var(--color-neutral-10);
+}
+
+
+button {
+    border-radius: 20px;
+    border: 1.2px solid var(--color-neutral-10);
+    background-color: var(--color-neutral-40);
+    color: var(--color-texto-cards);
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+}
+
+.form-container button {
+    margin-top: 17px;
+    transition: 80ms ease-in;
+}
+
+.form-container button:hover {
+    background-color: #867f7f81;
+    color: var(--color-verde-escuro);
+}
+
+.overlay-container {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 9;
+}
+
+#overlayBtn {
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    top: 304px;
+    transform: translateX(-50%);
+    width: 143.67px;
+    height: 40px;
+    border: 1px solid transparent;
+    background-color: transparent;
+    border-radius: 20px;
+}
+
+.overlay {
+    position: relative;
+    background-color: var(--color-textos);
+    color: var(--color-texto-cards);
+    left: -150%;
+    height: 100%;
+    width: 250%;
+    transition: transform 0.6s ease-in-out;
+}
+
+.overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    text-align: center;
+    height: 100%;
+    width: 340px;
+    transition: 0.6s ease-in-out;
+}
+
+.overlay-left {
+    right: 60%;
+    transform: translateX(-12%);
+
+}
+
+.overlay-right {
+    right: 0;
+    transform: translateX(0%);
+}
+
+.overlay-panel h1 {
+    color: #FFF;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 25px 0px 35px;
+}
+
+.overlay-panel button {
+    border: none;
+    /* background-color: transparent; */
+}
+
+
+.right-panel-active .overlay-container {
+    transform: translateX(-150%);
+}
+
+.right-panel-active .overlay {
+    transform: translateX(50%);
+}
+
+.right-panel-active .overlay-left {
+    transform: translateX(25%);
+}
+
+.right-panel-active .overlay-right {
+    transform: translateX(35%);
+}
+
+.right-panel-active .sign-in-container {
+    transform: translateX(20%);
+    opacity: 0;
+}
+
+.right-panel-active .sign-up-container {
+    transform: translateX(66.7%);
+    opacity: 1;
+    z-index: 5;
+    animation: show 0.6s;
+}
+
+@keyframes show {
+
+    0%,
+    50% {
+        opacity: 0;
+        z-index: 1;
+    }
+
+    50.1%,
+    100% {
+        opacity: 1;
+        z-index: 5;
+    }
+}
+
+@media (max-width: 768px) {
+  .container {
+      width: 100%; /* Ajusta para ocupar toda a largura disponível */
+      max-width: 100%; /* Garante que não ultrapasse a largura máxima permitida */
+  }
+
+  .form-container {
+      width: 80%; /* Ajusta a largura do formulário em telas menores */
+      padding: 0px 20px; /* Reduz o preenchimento do formulário */
+  }
+
+  .overlay-container {
+      left: 50%; /* Ajusta a posição do overlay */
+      transform: translateX(-50%);
+      width: 100%; /* Ajusta a largura do overlay */
+  }
+}
+
