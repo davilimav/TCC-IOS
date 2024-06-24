@@ -345,6 +345,7 @@ form {
 .inputBox label {
   font-weight: bold;
   margin-bottom: 5px;
+  color: #45a049;
 }
 
 .inputBox input {
