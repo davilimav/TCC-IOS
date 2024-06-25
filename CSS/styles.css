@@ -13,7 +13,8 @@
   --white-color: #FFF;
   --body-color: hsl(var(--hue-color), 4%, 6%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
-  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
+  /* --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%)); */
+  --text-gradient: rgb(81, 207, 98);
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Fonte e tipografia ==========*/
@@ -71,11 +72,11 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   background-color: var(--body-color);
-  color: var(--text-color);
+  /* color: var(--text-color); */
 }
 
 h1, h2, h3 {
-  color: var(--title-color);
+  /* color: var(--title-color); */
 }
 
 ul {
@@ -464,6 +465,7 @@ img {
 .footer__container {
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   row-gap: 2rem;
+  padding: 2rem;
 }
 
 .footer__title {
@@ -583,8 +585,8 @@ img {
 /* //------------------ logo novoo ---------------------- */
 body {
   font-family: Arial, sans-serif;
-  color: #ffffff;
-  background-color: rgb(24, 61, 13);
+  color: #000000;
+  background-color: rgb(110, 110, 110);
   transition: color 0.5s ease, background-color 0.5s ease; /* Adicionando transição suave */
 }
 
