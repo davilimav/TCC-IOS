@@ -13,8 +13,7 @@
   --white-color: #FFF;
   --body-color: hsl(var(--hue-color), 4%, 6%);
   --container-color: hsl(var(--hue-color), 4%, 10%);
-  /* --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%)); */
-  --text-gradient: rgb(68, 187, 60);
+  --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 24%), hsl(var(--hue-color), 4%, 8%));
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
   --scroll-thumb-color-alt: hsl(var(--hue-color), 4%, 20%);
   /*========== Fonte e tipografia ==========*/
@@ -144,7 +143,7 @@ img {
   left: 0;
   z-index: var(--z-fixed);
   background: transparent;
-  background-color: #000000;
+  /* background-color: #000000; */
 }
 
 /*=============== NAV ===============*/
@@ -585,8 +584,8 @@ img {
 /* //------------------ logo novoo ---------------------- */
 body {
   font-family: Arial, sans-serif;
-  color: #000000;
-  background-color: rgb(110, 110, 110);
+  color: #ffffff;
+  background-color: rgb(0, 0, 0);
   transition: color 0.5s ease, background-color 0.5s ease; /* Adicionando transição suave */
 }
 
@@ -653,11 +652,11 @@ h1 {
 }
 
 input:checked + .slider {
-  background-color: #484444; /* Mudança para preto quando ativado */
+  background-color: #d2d0d0; /* Mudança para preto quando ativado */
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #484444;; /* Mudança para preto quando ativado */
+  box-shadow: 0 0 1px #b9b9b9;; /* Mudança para preto quando ativado */
 }
 
 input:checked + .slider:before {
@@ -675,14 +674,34 @@ input:checked + .slider:before {
 
 input:checked + .slider .slider-text {
   left: 25%; /* Ajuste a porcentagem conforme necessário */
+  color: #525050c6;
 }
-
 
 .dark-mode {
-  background-color: #000000; 
-  color: #fff;
+  background-color: #e0dcdc; 
+  color: #2e2a2a;
   transition: color 0.5s ease, background-color 0.5s ease; /
 }
+
+.dark-mode .nav__link{
+  color: rgb(255, 255, 255);
+}
+
+.dark-mode .header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: var(--z-fixed);
+  background: transparent;
+  /* background-color: #000000;   */
+}
+
+.dark-mode .scroll-header{
+  background-color: rgb(77, 75, 75);
+}
+
 
 
 /*=============== MÍDIA QUERIES ===============*/
