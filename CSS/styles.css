@@ -437,7 +437,7 @@ img {
   inset: 0;
   margin-right: auto;
   margin-left: auto;
-  top: -3rem;
+  top: -5px;
 }
 
 .products__content {
@@ -446,6 +446,10 @@ img {
 
 .products__title, .products__price {
   font-size: var(--small-font-size);
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centraliza os itens no eixo vertical */
+  text-align: center; /* Centraliza o texto */
 }
 
 .products__price {
@@ -900,4 +904,29 @@ input:checked + .slider .slider-text {
   .footer__copy {
     margin-top: 9rem;
   }
+}
+
+/* Estilos de exemplo para o controle de áudio */
+.audio-player {
+  margin-top: 10px; /* Ajuste conforme necessário */
+  padding-left: 10vh;
+}
+
+.audio-btn {
+  background-color:#1b1a1a;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.userway_widget_container {
+  position: fixed; /* Fixa o widget na tela */
+  left: 20px; /* Distância da borda esquerda */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajusta a posição vertical */
+}
+
+.uiiw {
+  background-color: rgb(255, 0, 0);
 }

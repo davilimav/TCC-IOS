@@ -95,3 +95,14 @@ sr.reveal(`.specs__data, .discount__animate`,{origin: 'left', interval: 100})
 sr.reveal(`.specs__img, .discount__img`,{origin: 'right'})
 sr.reveal(`.case__img`,{origin: 'top'})
 sr.reveal(`.case__data`)
+
+function toggleAudio(audioId) {
+    var audio = document.getElementById(audioId);
+
+    if (audio.paused) {
+        audio.play();
+    } else {
+        audio.pause();
+        audio.currentTime = 0; // Reinicia o áudio para o início ao pausar
+    }
+}
