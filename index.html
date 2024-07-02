@@ -10,13 +10,19 @@
 
     <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 
     <!--=============== ÍCONES REMIX ===============-->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="./CSS/styles.css">
+
+    <!--=============== AUDIO ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!--=============== ACESSIBILIDADE ===============-->
+    <!-- <script src="https://cdn.userway.org/widget.js" data-account="9CZfRZ38Rp"></script> -->
 
     <title>TOPIA</title>
 </head>
@@ -26,13 +32,13 @@
     <div vw class="enabled">
         <div vw-access-button class="active"></div>
         <div vw-plugin-wrapper>
-          <div class="vw-plugin-top-wrapper"></div>
+            <div class="vw-plugin-top-wrapper"></div>
         </div>
-      </div>
-      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-      <script>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
         new window.VLibras.Widget('https://vlibras.gov.br/app');
-      </script>
+    </script>
 
     <!--=============== CABEÇALHO ===============-->
     <header class="header" id="header">
@@ -48,8 +54,6 @@
                     </span>
                 </label>
             </div>
-            
-
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
@@ -66,7 +70,7 @@
                         <a href="HTML/CEP_TOPIA.html" class="nav__link">Comprar</a>
                     </li>
                     <li class="nav__item">
-                        <a id="cadastro" href="HTML/topia.html"  class="nav__link">Sobre a Topia</a>
+                        <a id="cadastro" href="/HTML/topia.html"  class="nav__link">Sobre a Topia</a>
                     </li>
                 </ul>
 
@@ -82,6 +86,14 @@
     </header>
 
     <main class="main">
+
+        <!-- <span class="uiiw">
+            <img data-uw-rm-ignore="" class="ui_w" role="presentation" alt=""
+                src="https://cdn.userway.org/widget.js"data-account="9CZfRZ38Rp">
+        </span> -->
+
+        <script src="https://cdn.userway.org/widget.js" data-account="9CZfRZ38Rp"></script>
+
         <!--=============== INÍCIO ===============-->
         <section class="home section" id="home">
             <div class="home__container container grid">
@@ -167,7 +179,7 @@
 
             <div class="case__container container grid">
                 <div>
-                    <img src="img/case_topia.png" alt="" class="case__img"> 
+                    <img src="img/case_topia.png" alt="" class="case__img">
                 </div>
 
                 <div class="case__data">
@@ -205,100 +217,103 @@
             <div class="products__container container grid">
                 <article class="products__card">
                     <div class="products__content">
-                        <img src="./img/produto1.png" alt="" class="products__img">
+                        <img src="./img/produto1.png"
+                            alt="Óculos Vision flex, astes e armação da cor vermelha, e lentes da cor preto claro"
+                            class="products__img">
+                        <h3 class="products__title">Vision flex</h3>
 
-                        <h3 class="products__title">VisionFlex</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio1" src="Produto1.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio1')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
+
                 <article class="products__card">
                     <div class="products__content">
-                        <img src="img/produto2.png" alt="" class="products__img"> 
-
+                        <img src="img/produto2.png"
+                            alt="Óculos Optix, astes e armação da cor preta, e lentes da cor azul claro"
+                            class="products__img">
                         <h3 class="products__title">Optix</h3>
-                        <span class="products__price">$249</span>
 
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio2" src="Produto2.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio2')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
+
                 <article class="products__card">
                     <div class="products__content">
-                        <img src="img/produto3.png" alt="" class="products__img"> 
+                        <img src="img/produto3.png"
+                            alt="Óculos Sol dourado, astes e armação da cor dourada, e lentes da cor laranja"
+                            class="products__img">
+                        <h3 class="products__title">Sol dourado</h3>
 
-                        <h3 class="products__title">Preto Noturno</h3>
-                        <span class="products__price">$249</span>
-
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio3" src="Produto3.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio3')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
+
                 <article class="products__card">
                     <div class="products__content">
-                        <img src="img/produto4.png" alt="" class="products__img"> 
-
+                        <img src="img/produto4.png"
+                            alt="Óculos Lensa, astes e armação da cor preta, e lentes da cor rosa claro"
+                            class="products__img">
                         <h3 class="products__title">Lensa</h3>
-                        <span class="products__price">$249</span>
 
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio4" src="Produto4.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio4')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
 
                 <article class="products__card">
                     <div class="products__content">
-                         <img src="img/produto5.png" alt="" class="products__img"> 
-
+                        <img src="img/produto5.png"
+                            alt="Óculos Clarity, astes e armação da cor verde, e lentes da cor verde claro"
+                            class="products__img">
                         <h3 class="products__title">Clarity</h3>
-                        <span class="products__price">$249</span>
 
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio5" src="Produto5.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio5')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
 
                 <article class="products__card">
                     <div class="products__content">
-                     <img src="img/produto6.png" alt="" class="products__img">
-
+                        <img src="img/produto6.png"
+                            alt="Óculos Spectra marrom, astes e armação da cor marrom claro, e lentes da cor marrom escuro"
+                            class="products__img">
                         <h3 class="products__title">Spectra Marrom</h3>
-                        <span class="products__price">$249</span>
 
-                        <button class="button button--flex products__button">
-                            <nav>
-                                <a href="form.html">
-                                    <i class="ri-shopping-bag-line button__icon" id="corbutton-icon" ></i>
-                                </a>
-                            </nav>
-                        </button>
+                        <!-- Botão para controlar o áudio -->
+                        <div class="audio-player">
+                            <audio id="audio6" src="Produto6.wav"></audio>
+                            <button class="audio-btn" onclick="toggleAudio('audio6')">
+                                <i class="fas fa-volume-up"></i> <!-- Ícone de volume (exemplo) -->
+                            </button>
+                        </div>
                     </div>
                 </article>
 
@@ -382,13 +397,26 @@
         <i class="ri-arrow-up-s-line scrollup__icon"></i>
     </a>
 
+    <!--=============== CHAT IA ===============-->
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "mVOdLJiu4c5v0_G8SFC47",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" chatbotId="mVOdLJiu4c5v0_G8SFC47" domain="www.chatbase.co" defer>
+    </script>
+
+<!-- <iframe src="https://www.chatbase.co/chatbot-iframe/mVOdLJiu4c5v0_G8SFC47" width="100%"
+style="height: 100%; min-height: 700px" frameborder="0"></iframe> -->
+
     <!--=============== SCROLL REVEAL ===============-->
     <script src="https://unpkg.com/scrollreveal"></script>
 
     <!--=============== JS PRINCIPAL ===============-->
 
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-   
+
     <script src="./JS/main.js"></script>
 </body>
 
