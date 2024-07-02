@@ -240,9 +240,9 @@ img {
 
 /*=============== HOME ===============*/
 .home__img {
-  width: 450px;
+  /* width: 450px;
   top: 20rem;
-  right: 1.5rem;
+  right: 1.5rem; */
 }
 
 .home__data {
@@ -271,7 +271,7 @@ img {
 }
 
 .home__title-description {
-  font-size: var(--h3-font-size);
+  font-size: 3vh;
   font-weight: var(--font-medium);
   margin-bottom: var(--mb-1);
 }
@@ -706,6 +706,16 @@ input:checked + .slider .slider-text {
   background-color: rgb(77, 75, 75);
 }
 
+.dark-mode .home__subtitle{
+  color: #4d4b4b;
+}
+
+.dark-mode .home__title-description{
+  color: #000000;
+  font-size: 3vh;
+
+}
+
 
 
 /*=============== MÍDIA QUERIES ===============*/
@@ -928,5 +938,5 @@ input:checked + .slider .slider-text {
 }
 
 .uiiw {
-  background-color: rgb(255, 0, 0);
+  /* background-color: rgb(255, 0, 0); */
 }
