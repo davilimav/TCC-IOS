@@ -240,9 +240,9 @@ img {
 
 /*=============== HOME ===============*/
 .home__img {
-  /* width: 450px;
+  width: 450px;
   top: 20rem;
-  right: 1.5rem; */
+  right: 1.5rem;
 }
 
 .home__data {
@@ -339,7 +339,7 @@ img {
 }
 
 .specs__icon {
-  font-size: 1.2rem;
+  font-size: 1.9rem;
   color: var(--white-color);
 }
 
@@ -356,11 +356,11 @@ img {
   margin-left: 1.5rem;
 }
 
-.specs__img {
-  width: 250px;
-  position: absolute;
+.specs__container .specs__img {
+  width: 900px;
+  /* position: absolute;
   top: 2rem;
-  right: -4rem;
+  right: -4rem; */
 }
 
 /*=============== CASE ===============*/
@@ -368,19 +368,14 @@ img {
   position: relative;
   grid-template-columns: repeat(2, 1fr);
 }
+.case__container .case__img {
+ width: 600px;
+}
 
 .case__data {
   padding: 5rem 0 3rem;
 }
 
-.case__img {
-  width: 250px;
-  position: absolute;
-  left: -7rem;
-   /* background-color: var(--container-color);; */
-   border: 1px solid transparent;;
-  border-radius: 10px;
-}
 
 .case__description {
   margin-bottom: var(--mb-1-5);
