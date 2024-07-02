@@ -260,7 +260,7 @@ img {
   line-height: 6rem;
   font-size: var(--biggest-font-size);
   background: var(--text-gradient);
-  color: transparent;
+  color: rgba(93, 91, 91, 0.563);
   -webkit-background-clip: text;
   background-clip: text;
 }
@@ -287,6 +287,10 @@ img {
   margin-left: var(--mb-0-75);
 }
 
+.home__container .home__img {
+  width: 45vh; 
+}
+
 /*=============== BOTÕES ===============*/
 .button {
   display: inline-block;
@@ -310,6 +314,11 @@ img {
   display: inline-flex;
   align-items: center;
   column-gap: .75rem;
+}
+
+.icon-fone{
+  width: 7%;
+  background-color: #ff0000;
 }
 
 /*=============== SPONSOR ===============*/
@@ -425,6 +434,12 @@ img {
   border-radius: .5rem;
   display: grid;
 }
+
+/* .products__card:hover {
+  background-color: #f0f0f0; 
+  transform: scale(5.5); 
+} */
+
 
 .products__img {
   width: 80px;
@@ -698,7 +713,7 @@ input:checked + .slider .slider-text {
 }
 
 .dark-mode .scroll-header{
-  background-color: rgb(77, 75, 75);
+  background-color: rgb(49, 48, 48);
 }
 
 .dark-mode .home__subtitle{
@@ -708,8 +723,24 @@ input:checked + .slider .slider-text {
 .dark-mode .home__title-description{
   color: #000000;
   font-size: 3vh;
-
 }
+
+.dark-mode .specs__icon{
+  color: #000000;
+}
+
+.dark-mode .specs__title{
+  color: #000000;
+}
+.dark-mode .home__title{
+  color: rgba(126, 122, 122, 0.773);
+}
+
+.dark-mode .icon-fone{
+  color: #000000;
+}
+
+
 
 
 
