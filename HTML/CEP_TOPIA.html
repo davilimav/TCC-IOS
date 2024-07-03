@@ -1,73 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="../img/logo-olho.png" type="image/x-icon">
-
-    <!--=============== ÍCONES REMIX ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../CSS/CEP.css">
 
-    <title>TOPIA</title>
+    <title>Topia</title>
+
 </head>
 
 <body>
-    <!--=============== CABEÇALHO ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
+    <header>
 
-            <!-- //------------------ logo novoo---------------------- -->
-            <div class="box1">
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider round">
-                        <!-- Text inside the slider -->
-                        <h2 class="slider-text">Topia</h2>
-                    </span>
-                </label>
+        <nav class="nav-bar">
+            <div class="logo">
+               <a href="../index.html"> <img src="../img-form/topia_fundo.png" alt="logo"></a>
             </div>
-            
-
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Sobre</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link">Vião Guia</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="../HTML/CEP_TOPIA.html" class="nav__link">Consultar Especialista</a>
-                    </li>
-                    <li class="nav__item">
-                        <a id="cadastro" href="../HTML/form.html"  class="nav__link">Cadastre-se</a>
-                    </li>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Pagina Inicial</a></li>
+                    <li class="nav-item"><a href="../HTML/topia.html" class="nav-link">Sobre a Topia</a></li>
                 </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg"
+                        alt="Botão de menu"></button>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="../index.html" class="nav-link">Pagina Inicial</a></li>
+                <li class="nav-item"><a href="../HTML/topia.html" class="nav-link">Sobre a Topia</a></li>
+            </ul>
+
+
+        </div>
     </header>
 
     <main>
-        <div class="container_Cep">
+        <div class="container">
             <form id="address-form">
+                <div class="inputBox">
+                    <label for="name-input">Nome</label>
+                    <input type="text" id="name-input" name="name">
+                </div>
+                <div class="inputBox">
+                    <label for="gmail-input">Gmail</label>
+                    <input type="email" id="gmail-input" name="gmail">
+                </div>
+                <div class="inputBox">
+                    <label for="phone-number-input">Número de Telefone</label>
+                    <input type="text" id="phone-number-input" name="phone_number">
+                </div>
                 <div class="inputBox">
                     <label for="cep-input">CEP</label>
                     <input type="text" id="cep-input" name="cep">
@@ -98,93 +86,89 @@
                         <input type="text" id="city-input" name="city">
                     </div>
                 </div>
-                <button type="submit">Calcular Rota</button>
+                <button type="submit">Enviar Dados Analista</button>
             </form>
-            <a href="../index.html" class="button-link">Voltar para a pagina inicial</a>
+            <a href="../index.html" class="button-link">Voltar á Pagina Inicial</a>
         </div>
+        
     </main>
 
-    <!--=============== RODAPÉ ===============-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
 
-            <div class="footer__content">
-                <h3 class="footer__title">Produtos</h3>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logofo"><a href="../index.html">
+                        <img href="init" src="../img-form/topia.png" width="80vw" alt="logo"></a>
+                    <!-- <p>Fluxus</p> -->
+                </div>
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="../index.html" class="footer__link">Óculos</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Fones de ouvido</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Fones de ouvido</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Acessórios VisuGlam</a>
-                    </li>
-                </ul>
-            </div>
+                <div id="footer_social_media">
 
-            <div class="footer__content">
-                <h3 class="footer__title">Suporte</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="../index.html" class="footer__link">Ajuda do produto</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Registro</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Atualizações</a>
-                    </li>
-                    <li>
-                        <a href="../index.html" class="footer__link">Ofertas</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <form action="" class="footer__form">
-                    <input type="email" placeholder="E-mail" class="footer__input">
-                    <button class="button button--flex">
-                        <i class="ri-send-plane-line button__icon"></i> Inscrever-se
-                    </button>
-                </form>
-
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-line"></i>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-        </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Historia</a>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Missão, Vissão e Valores</a>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Visão</a>
+                </li>
+            </ul>
 
-        <p class="footer__copy">
-            <!-- Melhorar o footer -->
-            <a href="#" target="_blank" class="footer__copy-link">&#169; Topia. Todos
-                os direitos reservados</a>
-        </p>
+            <ul class="footer-list">
+                <li>
+                    <h3>Projetos</h3>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Topia + Vagalume</a>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Topia nas Escolas</a>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Topia + Rio Grande do Sul</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+
+                <p>
+                    Digite seu e-mail e seja notificado sobre nossas novidades.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <a href="mailto:reusedecor@outlook.com" target="l"><i class="fa-regular fa-envelope"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Topia.
+        </div>
     </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-s-line scrollup__icon"></i>
-    </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== JS PRINCIPAL ===============-->
-    <script src="../JS/CEP.js"></script>
+<script src="../JS/CEP.js"></script>
 </body>
 
 </html>
