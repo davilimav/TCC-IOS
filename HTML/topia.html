@@ -1,363 +1,499 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="PT-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!--=============== FAVICON ===============-->
     <link rel="shortcut icon" href="../img/logo-olho.png" type="image/x-icon">
-
-    <!--=============== ÍCONES REMIX ===============-->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-
-    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../CSS/topia.css">
 
-    <title>TOPIA</title>
+    <title>Topia</title>
+
 </head>
 
 <body>
-    <!--=============== CABEÇALHO ===============-->
-    <header class="header" id="header">
-        <nav class="nav container">
+    <header>
 
-            <!-- //------------------ logo novoo---------------------- -->
-            <div class="box1">
-                <label class="switch">
-                    <input type="checkbox" id="darkModeToggle">
-                    <span class="slider round">
-                        <!-- Text inside the slider -->
-                        <h2 class="slider-text">Topia</h2>
-                    </span>
-                </label>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="../img-form/topia_fundo.png" alt="logo">
             </div>
-
-
-
-            <div class="nav__menu" id="nav-menu">
-                <ul class="nav__list">
-                    <li class="nav__item">
-                        <a href="../index.html" class="nav__link active-link">Home</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#specs" class="nav__link">Historia</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#case" class="nav__link">ODS</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#case" class="nav__link">Missão, Visão e Valores</a>
-                    </li>
-                    <li class="nav__item">
-                        <a href="#case" class="nav__link">Loja</a>
-                    </li>
-                    <li class="nav__item">
-                        <a id="cadastro" href="../HTML/CEP_TOPIA.html" class="nav__link">Consultar Especialista</a>
-                    </li>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="#t2" class="nav-link">Nossa História</a></li>
+                    <li class="nav-item"><a href="#mvv" class="nav-link">Missão, Visão e Valores</a></li>
+                    <li class="nav-item"><a href="#t" class="nav-link">Projetos Sociais</a></li>
+                    <li class="nav-item"><a href="#mvv2" class="nav-link">ODS</a></li>
+                    <li class="nav-item"><a href="#CLIENTES" class="nav-link">Relação com o Cliente</a></li>
+                    <li class="nav-item"><a href="#e" class="nav-link">Conheça Nossa Loja</a></li>
                 </ul>
-
-                <div class="nav__close" id="nav-close">
-                    <i class="ri-close-line"></i>
-                </div>
             </div>
 
-            <div class="nav__toggle" id="nav-toggle">
-                <i class="ri-function-line"></i>
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="../img/menu_white_36dp.svg"
+                        alt="Botão de menu"></button>
             </div>
         </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#Equipe" class="nav-link">Nossa Equipe</a></li>
+                <li class="nav-item"><a href="#T" class="nav-link">Nossos Trabalhos</a></li>
+                <li class="nav-item"><a href="#Desafio" class="nav-link">DESAFIO REDUSEDECOR</a></li>
+                <li class="nav-item"><a href="#Escritorio" class="nav-link">Conheça a Fluxus</a></li>
+                <li class="nav-item"><a href="#CLIENTES" class="nav-link">Relação com o cliente</a></li>
+                <li class="nav-item"><a href="#e" class="nav-link">Estamos Contratando</a></li>
+            </ul>
+
+
+        </div>
     </header>
 
-    <!--=============== CORPO ===============-->
-
     <main>
-        <div class="box2">
-            <img src="../img-form/topia_fundo.png" width="500px" alt="empresa">
-            <h1>Sobre Nós</h1>
-            <p>Um grupo de amigos estudantes de design mobiliário, preocupados com o impacto ambiental dos resíduos nos
-                rios Tietê e Pinheiros, dedicou meses a pesquisa e prototipagem até desenvolver uma linha de móveis e
-                decorações sustentáveis feitos com materiais reciclados. Com o tempo, sua empresa cresceu
-                constantemente, expandindo a linha de produtos, investindo em marketing e participando de eventos de
-                design e sustentabilidade. A marca ganhou visibilidade, conscientizando a população sobre reciclagem e
-                tornando móveis sustentáveis uma presença comum na sociedade.</p>
-        </div>
-
-        <div id="sob" class="box2">
-            <h1>O que oferecemos</h1>
-            <p>A Reusedecor é uma empresa que se dedica à produção de móveis e decorações sustentáveis, utilizando
-                materiais reciclados coletados do meio ambiente. Com foco na sustentabilidade e na proteção do meio
-                ambiente, adota práticas de fabricação que minimizam o desperdício e reduzem a pegada de carbono. A
-                empresa colabora com organizações ambientais para promover a limpeza de rios e a reciclagem de
-                plásticos, transformando resíduos em produtos de alta qualidade e durabilidade. Com uma visão de criar
-                espaços de vida vibrantes e harmoniosos, a Reusedecor combina design inovador com responsabilidade
-                ecológica, oferecendo soluções elegantes para lares conscientes e se posicionando como líder no mercado
-                de móveis sustentáveis.</p>
-        </div>
-
-        <div class="Carrossel">
-            <div class="slide" id="img">
-                <img src="IMG_produtos/Cadeira_bambu02.png" alt="">
-                <img src="IMG_produtos/Cadeira_bambu03.png" alt="">
-                <img src="IMG_produtos/Cadeira_bambu04.png" alt="">
-                <img src="IMG_produtos/Cadeira_jornal.png" alt="">
-                <img src="IMG_produtos/Poltrona_papel.png" alt="">
-                <img src="IMG_produtos/Poltrona_papel_2.png" alt="">
-            </div>
-        </div>
-
-        <div class="box3">
-            <h1>Nossos Produtos</h1>
-            <h2>Mesas e cadeiras feitas de materiais reciclados.</h2>
-            <h3>Características do produto:</h3>
-            <h3>MESA:</h3>
-            <ol>
-                <li>55 a 57 cm de altura e 45 a 47 cm de largura;</li>
-                <li>Comprimento 53 a 55cm;</li>
-                <li>Cores: branco,cinza e preto;</li>
-                <li>3Kg;</li>
-            </ol>
-            <h3>CADEIRAS:</h3>
-            <ol>
-                <li>46 e 48 cm de altura, 41 a 43 cm de largura;</li>
-                <li>Comprimento 41 a 43 cm;</li>
-                <li>Cores: branco,cinza e preto;</li>
-                <li>1Kg.</li>
-            </ol>
-        </div>
 
 
-       
 
-        <article id="proj">
-            <h1>Nosso Futuro</h1>
-            <div class="MVV">
-                <div class="carta">
-                    <img src="../img-form/icon-missao.png" alt="M">
-                    <div class="carta-content">
-                        <h3>Missão:</h3>
-                        <p>A nossa missão é transformar materiais recuperados dos rios em móveis sustentáveis,
-                            inovadores e
-                            de
-                            alta qualidade, promovendo a preservação ambiental e conscientização ecológica. Utilizamos
-                            reutilização criativa e responsável de recursos naturais para contribuir para um futuro mais
-                            verde e
-                            sustentável para as próximas gerações.</p>
+
+
+        <!-- ================================================================================================================================================================================================================================================================================================================= -->
+
+        <!-- ================================================================================================================================================================================================================================================================================================================= -->
+
+        <section class="CONTEINER">
+            <img src="../img-form/topia_fundo.png" alt="Logo da Topia" id="Escritorio">
+            <h3 id="t2">História</h3>
+            <p>
+
+
+                Em uma pequena cidade no interior do Brasil, uma jovem engenheira chamada Ana sempre sonhou em fazer a
+                diferença no mundo. Desde criança, ela era fascinada por tecnologia e inovação, mas foi um encontro
+                casual que mudou sua vida para sempre. Um dia, durante uma viagem ao mercado local, Ana conheceu João,
+                um idoso cego que tinha uma atitude positiva e vibrante, apesar de suas limitações visuais. Inspirada
+                pela história de vida de João, Ana decidiu que queria criar algo que pudesse ajudar pessoas como ele a
+                viverem de maneira mais independente e plena.
+
+                <br><br>
+
+                Ana compartilhou sua visão com dois amigos de longa data: Lucas, um talentoso programador, e Mariana,
+                uma designer de produtos com um coração enorme. Juntos, fundaram a empresa chamada "Topia". Com recursos
+                limitados, começaram a trabalhar na garagem de Ana, dedicando noites e finais de semana para desenvolver
+                a tecnologia que poderia transformar a vida dos cegos.
+
+                <br><br>
+
+                O trio enfrentou inúmeros desafios técnicos. Criar um óculos que pudesse "ver" e transmitir informações
+                de maneira útil para uma pessoa cega era uma tarefa monumental. Eles precisavam desenvolver sensores
+                precisos, um software de reconhecimento de imagem avançado e uma interface de áudio intuitiva. Após
+                meses de experimentação e falhas, eles finalmente criaram um protótipo que funcionava. O óculos
+                utilizava inteligência artificial para identificar objetos, ler textos e descrever o ambiente ao redor
+                do usuário.
+
+                <br><br>
+
+                Com o protótipo pronto, Ana, Lucas e Mariana organizaram uma demonstração na praça central da cidade.
+                Convidaram João para ser o primeiro a testar o dispositivo. Com os óculos ajustados, João começou a
+                andar pela praça, ouvindo descrições detalhadas do ambiente ao seu redor. Ele se emocionou ao conseguir
+                identificar pessoas conhecidas e ler placas de sinalização. O sucesso da demonstração atraiu a atenção
+                da mídia local e rapidamente se espalhou para além das fronteiras da cidade.
+
+                <br><br>
+
+                A empresa cresceu rapidamente após a demonstração bem-sucedida. Investidores começaram a se interessar,
+                permitindo que a Topia expandisse sua equipe e melhorasse ainda mais a tecnologia. O produto final,
+                chamado "Olho Amigo", foi lançado no mercado global e se tornou um sucesso instantâneo. Milhares de
+                pessoas cegas ao redor do mundo começaram a usar os óculos, ganhando uma nova sensação de liberdade e
+                independência.
+
+                <br><br>
+
+                Apesar do crescimento e do sucesso financeiro, Ana, Lucas e Mariana nunca esqueceram o propósito
+                original de sua empresa. Eles criaram programas de doação para comunidades carentes e trabalharam em
+                parceria com organizações de apoio a deficientes visuais para garantir que o Olho Amigo estivesse
+                disponível para todos que precisassem.
+
+                <br><br>
+
+                A Topia continua a inovar, sempre buscando novas maneiras de melhorar a vida das pessoas com deficiência
+                visual. Ana, Lucas e Mariana tornaram-se modelos de empreendedorismo social, mostrando que com paixão,
+                determinação e um desejo genuíno de ajudar, é possível criar um mundo mais inclusivo e acessível para
+                todos.
+
+                E assim, a pequena empresa que começou em uma garagem tornou-se um farol de esperança e inovação,
+                transformando vidas e proporcionando uma verdadeira "Visão além da Visão".
+            </p>
+            <h3 id="t2">Quem Somos?</h3>
+            <p>Somos uma startup chamada Topia, temos como visão tornar o mundo mais acessível para os deficientes
+                visuais. Somos inspirados em criar soluções inovadoras, por isso desenvolvemos um dispositivo que
+                poderia auxiliar os deficientes visuais a caminharem pelo mundo de maneira independente e segura.
+                Após anos de pesquisa e desenvolvimento, nós finalmente apresentamos o nosso primeiro produto: o "Visão
+                Guia".
+                <br><br>
+
+            </p>
+        </section>
+
+        <h2 id="mvv">Missão, Visão e Valores</h2>
+
+        <section class="Falso_body">
+            <div class="caixao">
+
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img-form/icon-missao.png"
+                            alt="Icone de foguete para representar a missão da empressa. Clique para ler o txto">
                     </div>
-                </div>
-                <div class="carta">
-                    <img src="../img-form/icon-visao.png" alt="V">
-                    <div class="carta-content">
-                        <h3>Visão:</h3>
-                        <p>A ODS 12, focada em produção e consumo sustentáveis, desempenha um papel fundamental no
-                            projeto
-                            de
-                            produção de móveis e decorações sustentáveis feitos de materiais reciclados dos oceanos. Ela
-                            promove
-                            padrões de produção sustentável, incentivando eficiência no uso de recursos e redução de
-                            desperdício. A
-                            ODS 12 também busca reduzir resíduos ao longo da cadeia produtiva, apoiando o design
-                            sustentável
-                            de
-                            produtos duráveis e reparáveis. Além disso, educa os consumidores sobre práticas de consumo
-                            responsável
-                            e promove cadeias de abastecimento sustentáveis, incentivando inovação em reciclagem e
-                            transparência nas
-                            práticas empresariais. Em resumo, a ODS 12 orienta e apoia iniciativas que visam minimizar o
-                            impacto
-                            ambiental e promover o uso responsável de recursos na produção de móveis e decorações
-                            sustentáveis.</p>
-                    </div>
-                </div>
-                <div class="carta">
-                    <img src="../img-form/icon-valores.png" alt="VV">
-                    <div class="carta-content">
-                        <h3>Valores:</h3>
-                        <p>1. Sustentabilidade: Compromisso com a proteção ambiental e uso responsável de recursos.</p>
-                        <p>2. Inovação: Busca por soluções criativas que transformem resíduos em produtos de valor.</p>
-                        <p>3. Qualidade: Excelência em cada peça, combinando durabilidade e estética.</p>
-                        <p>4. Responsabilidade Social: Contribuição para a comunidade e práticas éticas.</p>
-                        <p>5. Transparência: Comunicação aberta com clientes, parceiros e colaboradores.</p>
-                        <p>6. Colaboração: Valorização do trabalho em equipe e parcerias que fortalecem nossa missão.
+                    <div class="caixao_dentro">
+                        <h2>Missão</h2>
+                        <p>Facilitar a vida dos deficientes visuais fornecendo tecnologia inovadora e acessível, como
+                            nosso óculos tecnológico com fones direcionais, para orientá-los de forma segura e
+                            independente em suas atividades diárias
                         </p>
-                        <p>7. Respeito: Pelo meio ambiente, pessoas e trabalho artesanal envolvido na criação dos
-                            produtos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <h1>Objetivos de Desenvolvimento Sustentável </h1>
-            <div class="ODS">
-                <div class="artigo">
-                    <img src="../img/7.png" alt="ODS 14">
-                    <div class="artigo-content">
-                        <h3>A ODS 14</h3>
-                        <p>A ODS 14 visa conservar e usar de forma sustentável os oceanos, mares e recursos marinhos,
-                            desempenhando
-                            um papel crucial em projetos como a produção de móveis e decorações sustentáveis feitos de
-                            materiais
-                            reciclados coletados de oceanos e praias. Ela promove conscientização e educação sobre a
-                            importância da
-                            conservação marinha, reduz a poluição marinha ao reciclar resíduos para uso em produtos,
-                            protege
-                            a vida
-                            marinha removendo materiais dos habitats marinhos e promove o uso sustentável dos recursos
-                            marinhos,
-                            além de impulsionar o desenvolvimento econômico sustentável em comunidades costeiras. Em
-                            suma, a
-                            ODS 14
-                            oferece uma estrutura para orientar e apoiar projetos que beneficiem tanto o meio ambiente
-                            marinho
-                            quanto as comunidades locais.</p>
-                    </div>
-                </div>
-                <div class="artigo">
-                    <img src="../img/8.png" alt="ODS 12">
-                    <div class="artigo-content">
-                        <h3>ODS 12</h3>
-                        <p>A ODS 12, focada em produção e consumo sustentáveis, desempenha um papel fundamental no
-                            projeto
-                            de
-                            produção de móveis e decorações sustentáveis feitos de materiais reciclados dos oceanos. Ela
-                            promove
-                            padrões de produção sustentável, incentivando eficiência no uso de recursos e redução de
-                            desperdício. A
-                            ODS 12 também busca reduzir resíduos ao longo da cadeia produtiva, apoiando o design
-                            sustentável
-                            de
-                            produtos duráveis e reparáveis. Além disso, educa os consumidores sobre práticas de consumo
-                            responsável
-                            e promove cadeias de abastecimento sustentáveis, incentivando inovação em reciclagem e
-                            transparência
-                            nas
-                            práticas empresariais. Em resumo, a ODS 12 orienta e apoia iniciativas que visam minimizar o
-                            impacto
-                            ambiental e promover o uso responsável de recursos na produção de móveis e decorações
-                            sustentáveis.</p>
-                    </div>
-                </div>
-                <div class="artigo">
-                    <img src="../img/9.png" alt="ODS 11">
-                    <div class="artigo-content">
-                        <h3>ODS 11</h3>
-                        <p>O ODS 11 visa tornar as cidades e comunidades mais sustentáveis, resilientes e inclusivas até
-                            2030.
-                            Ele
-                            enfoca várias áreas-chave, como garantir acesso adequado à moradia segura e acessível,
-                            desenvolver
-                            sistemas de transporte público sustentáveis, criar espaços públicos verdes e acessíveis,
-                            promover
-                            planejamento urbano inclusivo e eficaz, e gerenciar resíduos de forma sustentável. Este
-                            objetivo
-                            busca
-                            transformar as cidades em ambientes habitáveis, equitativos e ambientalmente conscientes,
-                            respondendo
-                            aos desafios urbanos globais de crescimento populacional e urbanização crescente.</p>
-                    </div>
-                </div>
-        </article>
-        <section id="loc">
-            <h1>Nossa localização loja física</h1>
-            <div class="box4">
-                <h1>Visite Nossa Loja</h1>
-                <img src="img/loc.jpg" width="200vh" alt="">
-                <h3>Endereço: Rua das Flores, 123 - Centro, São Paulo/SP</h3>
-                <h4>Horário de Funcionamento:</h4>
-                <p>Segunda a Sábado, 9h às 18h</p>
-            </div>
 
-            <div class="box5">
-                <h2>Loja de fabricação</h2>
-                <img src="img/loc1.png" width="400vh" alt="">
-                <h3>Endereço: Rua do Manifesto, 205 - Bairro do Ipiranga</h3>
-                <h4>Horários de Funcionamento</h4>
-                <p>Segunda a Sexta: 8:00 - 18:00</p>
-                <p>Sábado: 9:00 - 14:00</p>
-                <p>Domingo Fechado</p>
+                    </div>
+                </div>
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img-form/icon-visao.png"
+                            alt="Icone de olho para representar a visão da empressa. Clique para ler o txto">
+                    </div>
+                    <div class="caixao_dentro">
+                        <h2>Visão</h2>
+                        <p>Ser a principal referência global em tecnologia assistiva para deficientes visuais,
+                            proporcionando uma experiência de vida mais inclusiva e independente para milhões de pessoas
+                            em todo o mundo.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img-form/icon-valores.png"
+                            alt="Icone de equipe para representar os valores da empressa. Clique para ler o txto">
+                    </div>
+                    <div class="caixao_dentro">
+                        <h2>Valores</h2>
+                        <p>Inovação</p>
+                        <p>Empatia</p>
+                        <p>Qualidade</p>
+                        <p>Impacto social</p>
+
+                    </div>
+                </div>
+
             </div>
         </section>
 
+        <h1 id="t">Nossos Trabalhos</h1>
+        <h2 id="Projeto">Topia + Vagalume</h2>
+
+        <section class="contaner">
+
+            <p class="p">A Topia é uma startup, que tem como visão tornar o mundo mais acessível para os deficientes
+                visuais. São inspirados em criar soluções inovadoras, por isso desenvolvemos um dispositivo que poderia
+                auxiliar os deficientes visuais a caminharem pelo mundo de maneira independente e segura. <br> <br>
+                Eles vendem óculos com tecnologia avançada para auxiliar pessoas com deficiência visual. Ele contém
+                sensores de proximidade e um GPS embutido para orientar o usuário sobre o que está à frente. Os óculos
+                acompanham fones de ouvido com tecnologia de orientação visual, informando sobre obstáculos como postes
+                ou carros, sinais de trânsito e outras informações importantes. </p>
+            <div class="box1">
+                <div class="caixa_pai">
+                    <div class="flip">
+                        <div class="frente"></div>
+                        <div class="tras">
+                            <h3>desenvolvedores</h3>
+                            <p>Site do Davi</p>
+                            <a href="">Clique-me</a>
+                            <p>Site da Mariana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Guilherme</p>
+                            <a href="https://github.com/GuiCastro1">Clique-me</a>
+                            <p>Site da Ana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Fabiano</p>
+                            <a href="">Clique-me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    
+
+
+        <h2 id="Desafio"> Topia nas Escolas</h2>
+        <section class="contaner">
+
+
+            <div class="box1">
+                <div class="caixa_pai">
+                    <div class="flip">
+                        <div class="frente1"></div>
+                        <div class="tras1">
+                            <h3>Competidores</h3>
+                            <p>Site do Davi</p>
+                            <a href="">Clique-me</a>
+                            <p>Site da Mariana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Guilherme</p>
+                            <a href="https://guicastro1.github.io/Zendesk/">Clique-me</a>
+                            <p>Site da Ana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Fabiano</p>
+                            <a href="">Clique-me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="p">
+                No final de cada ano, nossa empresa promove um desafio: o desenvolvedor que criar o melhor site ganha um
+                bônus de fim de ano e duas semanas de férias. No último desafio, tivemos cinco grandes projetos
+                competindo na final. Confira os sites dos participantes. Passe o cursor sobre a imagem da empressa
+                Redusedecor.</p>
+
+        </section>
+
+        <h2 id="Projeto">Topia  + Rio Grande do Sul</h2>
+
+        <section class="contaner">
+
+            <p class="p">A Topia é uma startup, que tem como visão tornar o mundo mais acessível para os deficientes
+                visuais. São inspirados em criar soluções inovadoras, por isso desenvolvemos um dispositivo que poderia
+                auxiliar os deficientes visuais a caminharem pelo mundo de maneira independente e segura. <br> <br>
+                Eles vendem óculos com tecnologia avançada para auxiliar pessoas com deficiência visual. Ele contém
+                sensores de proximidade e um GPS embutido para orientar o usuário sobre o que está à frente. Os óculos
+                acompanham fones de ouvido com tecnologia de orientação visual, informando sobre obstáculos como postes
+                ou carros, sinais de trânsito e outras informações importantes. </p>
+            <div class="box1">
+                <div class="caixa_pai">
+                    <div class="flip">
+                        <div class="frente2"></div>
+                        <div class="tras2">
+                            <h3>desenvolvedores</h3>
+                            <p>Site do Davi</p>
+                            <a href="">Clique-me</a>
+                            <p>Site da Mariana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Guilherme</p>
+                            <a href="https://github.com/GuiCastro1">Clique-me</a>
+                            <p>Site da Ana</p>
+                            <a href="">Clique-me</a>
+                            <p>Site do Fabiano</p>
+                            <a href="">Clique-me</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <h2 id="mvv2">ODS</h2>
+
+        <section class="Falso_body">
+            <div class="caixao">
+
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img/7.png"
+                            alt="Icone de foguete para representar a missão da empressa. Clique para ler o txto">
+                    </div>
+                    <div class="caixao_dentro">
+                        <h2>ODS 3</h2>
+                        <p>Esse objetivo foca na redução da mortalidade materna e infantil, na erradicação de epidemias como AIDS e malária, e no combate a doenças não transmissíveis, como doenças cardíacas e diabetes. Também busca garantir o acesso universal a serviços de saúde reprodutiva, tratamento de abuso de substâncias, e saúde mental. 
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img/8.png"
+                            alt="Icone de olho para representar a visão da empressa. Clique para ler o txto">
+                    </div>
+                    <div class="caixao_dentro">
+                        <h2>ODS 9</h2>
+                        <p>Este objetivo foca na modernização de infraestruturas para torná-las mais sustentáveis e eficientes, na promoção de indústrias sustentáveis que gerem empregos e na ampliação do acesso à informação e tecnologia, especialmente nos países em desenvolvimento.
+                        </p>
+
+                    </div>
+                </div>
+                <div class="card_equipe">
+                    <div class="imagens">
+                        <img src="../img/9.png"
+                            alt="Icone de equipe para representar os valores da empressa. Clique para ler o txto">
+                    </div>
+                    <div class="caixao_dentro">
+                        <h2>ODS 17</h2>
+                        <p>Esse objetivo enfatiza a necessidade de cooperação internacional e parcerias eficazes entre governos, setor privado e sociedade civil. O ODS 17 promove o aumento do financiamento para o desenvolvimento, o fortalecimento da capacidade tecnológica e a melhoria do comércio global. 
+                        </p>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <h2 id="CLIENTES">Avaliação dos Cliente</h2>
+        <section class="teste">
+
+            <div class="card-container">
+                <div class="cards">
+                    <img src="../img/g.webp" alt="">
+                    <div class="content">
+                        <h3>Margarida</h3>
+                        <p>"Estou extremamente satisfeito com o serviço prestado. A equipe é super profissional e
+                            atenciosa. Recomendo a todos que buscam qualidade e eficiência!"</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/gh.webp" alt="">
+                    <div class="content">
+                        <h3>George</h3>
+                        <p>"O atendimento ao cliente é simplesmente impecável. Resolveram meu problema rapidamente e com
+                            muita simpatia. Parabéns pela excelência!"</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/astolfo.jpeg" alt="">
+                    <div class="content">
+                        <h3>Astolfo</h3>
+                        <p>"O serviço oferecido superou todas as minhas expectativas. Rápido, eficiente e com um
+                            atendimento de primeira. Com certeza, voltarei a utilizar."</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/jfg.webp" alt="">
+                    <div class="content">
+                        <h3>Morgana</h3>
+                        <p>"A qualidade do serviço é excepcional. Cada detalhe foi pensado com muito cuidado, e o
+                            resultado final foi incrível. Muito obrigado!"</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/pexels-photo-8327458.jpeg" alt="">
+                    <div class="content">
+                        <h3>Beatriz</h3>
+                        <p>"Fiquei muito satisfeito com o serviço. A equipe é extremamente competente e atenciosa. O
+                            resultado final foi melhor do que eu esperava. Recomendo fortemente!"</p>
+                    </div>
+                </div>
+                <div class="cards">
+                    <img src="../img/sd.webp" alt="">
+                    <div class="content">
+                        <h3>Chiara</h3>
+                        <p>"O profissionalismo e a dedicação da equipe são notáveis. Desde o primeiro contato até a
+                            finalização do serviço, tudo foi perfeito. Continuem assim!"</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="ttt">
+            <h2 id="e">Conheça a Topia</h2>
+
+            <section class="CONTEINER3">
+                <div>
+                    <p>Rua Quinto dos Infernos Nº666
+                        <br><br>
+                        Das 10h00 às 17h30
+                    </p>
+
+                </div>
+                <img src="../img/Escritorio.png" alt="">
+            </section>
+
+
+
+            <section class="CONTEINER4">
+                
+                <div>
+                    <h3>Tire suas Duvidas</h3>
+                    <br><br>
+                    <form action="#">
+                        <label for="p"></label>
+                        <input type="text" id="p">
+                    </form>
+                    <br><br>
+
+                    <button type="submit">Enviar</button>
+                </div>
+            </section>
+        </section>
     </main>
-    <!--=============== RODAPÉ ===============-->
-    <footer class="footer section">
-        <div class="footer__container container grid">
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <div class="logofo"><a href="../index.html">
+                        <img href="init" src="../img-form/topia.png" width="80vw" alt="logo"></a>
+                    <!-- <p>Fluxus</p> -->
+                </div>
 
-            <div class="footer__content">
-                <h3 class="footer__title">Produtos</h3>
+                <div id="footer_social_media">
 
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Óculos</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Fones de ouvido</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Fones de ouvido</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Acessórios VisuGlam</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <h3 class="footer__title">Suporte</h3>
-
-                <ul class="footer__links">
-                    <li>
-                        <a href="#" class="footer__link">Ajuda do produto</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Registro</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Atualizações</a>
-                    </li>
-                    <li>
-                        <a href="#" class="footer__link">Ofertas</a>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="footer__content">
-                <form action="" class="footer__form">
-                    <input type="email" placeholder="E-mail" class="footer__input">
-                    <button class="button button--flex">
-                        <i class="ri-send-plane-line button__icon"></i>Inscrever-se
-                    </button>
-                </form>
-
-                <div class="footer__social">
-                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-facebook-fill"></i>
+                    <a href="https://www.instagram.com/" target="_blank" class="footer-link" id="instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-instagram-line"></i>
+
+                    <a href="https://www.facebook.com/" target="_blank" class="footer-link" id="facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                        <i class="ri-twitter-line"></i>
+
+                    <a href="https://www.whatsapp.com/" target="_blank" class="footer-link" id="whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
                     </a>
                 </div>
             </div>
-        </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Sobre Nós</h3>
+                </li>
+                <li>
+                    <a href="#init" class="footer-link">Historia</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Missão, Vissão e Valores</a>
+                </li>
+                <li>
+                    <a href="#proj" class="footer-link">Visão</a>
+                </li>
+            </ul>
 
-        <p class="footer__copy">
-            <!-- Melhorar o footer -->
-            <a href="#" target="_blank" class="footer__copy-link">&#169; Topia. Todos
-                os direitos reservados</a>
-        </p>
+            <ul class="footer-list">
+                <li>
+                    <h3>Projetos</h3>
+                </li>
+                <li>
+                    <a href="#Projeto" class="footer-link">Topia</a>
+                </li>
+                <li>
+                    <a href="#TARANTINO" class="footer-link">Tarantino</a>
+                </li>
+                <li>
+                    <a href="#Desafio" class="footer-link">Reusedecor</a>
+                </li>
+            </ul>
+
+            <div id="footer_subscribe">
+                <h3>Se inscreva!</h3>
+
+                <p>
+                    Digite seu e-mail e seja notificado sobre nossas novidades.
+                </p>
+
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <a href="mailto:reusedecor@outlook.com" target="l"><i class="fa-regular fa-envelope"></i></a>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2024 Topia.
+        </div>
     </footer>
 
-    <!--=============== SCROLL UP ===============-->
-    <a href="#" class="scrollup" id="scroll-up">
-        <i class="ri-arrow-up-s-line scrollup__icon"></i>
-    </a>
-
-    <!--=============== SCROLL REVEAL ===============-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-
-    <!--=============== JS PRINCIPAL ===============-->
-    <script src="../JS/main.js"></script>
+<script src="../JS/topia.js"></script>
 </body>
 
 </html>
