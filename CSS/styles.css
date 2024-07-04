@@ -366,7 +366,7 @@ img {
 }
 
 .specs__container .specs__img {
-  width: 900px;
+  width: 100%;
   /* position: absolute;
   top: 2rem;
   right: -4rem; */
@@ -375,10 +375,11 @@ img {
 /*=============== CASE ===============*/
 .case__container {
   position: relative;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
 }
-.case__container .case__img {
- width: 600px;
+ .case__img {
+  display: block;
+ width: 100%;
 }
 
 .case__data {
@@ -863,6 +864,7 @@ input:checked + .slider .slider-text {
     grid-template-columns: repeat(2, 1fr);
   }
   .home__img {
+    width: 100%;
     top: -9rem;
     left: 4rem;
   }
