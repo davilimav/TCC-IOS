@@ -955,14 +955,3 @@ input:checked + .slider .slider-text {
   font-size: 20px;
   color: #ffffff;
 }
-
-.userway_widget_container {
-  position: fixed; /* Fixa o widget na tela */
-  left: 20px; /* Distância da borda esquerda */
-  top: 50%; /* Centraliza verticalmente */
-  transform: translateY(-50%); /* Ajusta a posição vertical */
-}
-
-.uiiw {
-  /* background-color: rgb(255, 0, 0); */
-}

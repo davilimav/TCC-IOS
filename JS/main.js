@@ -106,3 +106,8 @@ function toggleAudio(audioId) {
         audio.currentTime = 0; // Reinicia o áudio para o início ao pausar
     }
 }
+
+var ht = new HT({
+    // Troque por seu token de acesso
+    token: "<TOKEN>"
+  });
