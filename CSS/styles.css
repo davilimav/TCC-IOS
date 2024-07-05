@@ -288,7 +288,7 @@ img {
 }
 
 .home__container .home__img {
-  width: 45vh; 
+  width: 400px; 
 }
 
 /*=============== BOTÕES ===============*/
@@ -366,10 +366,10 @@ img {
 }
 
 .specs__container .specs__img {
-  width: 100%;
-  /* position: absolute;
-  top: 2rem;
-  right: -4rem; */
+  width: 500px;
+  position: absolute;
+  top: -5rem;
+  right: -3rem;
 }
 
 /*=============== CASE ===============*/
@@ -608,7 +608,7 @@ body {
   max-width: 600px;
   margin: 0 auto;
   padding: 50px 20px;
-  margin-left: -20vh;
+  margin-left: 10vh;
 }
 
 h1 {
